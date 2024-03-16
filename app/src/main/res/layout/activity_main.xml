@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#51829B"
+        android:fontFamily="@font/archivo_black"
+        android:gravity="center"
+        android:text="HILYA ZALWANA QUIZ 1"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="180dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:background="#ADC4CE"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="bottom|center|left"
+        android:text="Nama Pembeli"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/etnamapembeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Nama"/>
+
+    <TextView
+        android:id="@+id/tvkodebarang"
+        android:layout_width="150dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="#ADC4CE"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Kode Barang"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etkodebarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Kode Barang"/>
+
+    <TextView
+        android:id="@+id/tvjumlahbarang"
+        android:layout_width="180dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="#ADC4CE"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Jumlah Barang"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etjumlahbarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="0"/>
+
+    <TextView
+        android:id="@+id/tvmember"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="#ADC4CE"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Member"
+        android:textSize="20dp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rbgold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Gold"/>
+
+            <RadioButton
+                android:id="@+id/rbsilver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Silver" />
+
+            <RadioButton
+                android:id="@+id/rbreguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Reguler" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnproses"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="50dp"
+        android:background="#51829B"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="PROSES"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
